@@ -47,3 +47,11 @@ $res[] = $val;
 }
 }
 
+function array_get_last($arr){
+  end($arr);
+  return key($arr);
+}
+
+function array_read_last($arr){
+  return $arr[array_get_last($arr)];
+}
